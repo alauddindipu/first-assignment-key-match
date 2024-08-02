@@ -4,16 +4,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ket Match</title>
+    <title>Key Match</title>
     <link rel="stylesheet" href="style.css">
+
   </head>
 
   <body>
     <main>
       <div class="container">
         <div class="left-section">
-          <button class="btn-generate key-text">Generate Secret Key</button>
-          <input type="text" readonly="readonly">
+          <button id="random-generate" class="btn-generate key-text">Generate Secret Key</button>
+          <input id="input-auto-filed" class="input-auto" type="value" readonly="readonly">
         </div>
 
         <div>
@@ -22,26 +23,30 @@
 
         <div class="right-section">
           <p class="key-text">Enter PIN:
-            <input class="input-field" type="text"></p>
+            <input class="input-field" type="text" maxlength="6"></p>
 
-          <div class="keypad">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>0</div>
-            <div>X</div>
-            <div>Submit</div>
-            <div>Clear</div>
+          <div class="keypads">
+            <div class="">1</div>
+            <div class="">2</div>
+            <div class="">3</div>
+            <div class="">4</div>
+            <div class="">5</div>
+            <div class="">6</div>
+            <div class="">7</div>
+            <div class="">8</div>
+            <div class="">9</div>
+            <div class="">0</div>
+            <div class="x-btn">X</div>
+            <div class="submit-btn">Submit</div>
+            <div class="clear-btn">Clear</div>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- js linked -->
+    <script src="scripts.js"></script>
+
   </body>
 
 </html>

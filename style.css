@@ -2,10 +2,12 @@ main {
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    /* color: white; */
 }
 
 .container {
-    background-color: rgb(236, 203, 137);
+    background: rgb(142, 190, 191);
+    background: linear-gradient(0deg, rgb(135, 200, 201) 0%, rgb(140, 252, 134) 100%);
     width: 1400px;
     height: 700px;
     border-radius: 5px;
@@ -16,17 +18,25 @@ main {
 }
 
 .btn-generate {
-    height: 80px;
+    height: 95px;
     width: 230px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: rgb(93, 190, 112);
 
     margin: 10px 0;
 }
 
-.key-text {
-    font-weight: 400;
+.key-text,
+.input-auto {
+    font-weight: 600;
     font-size: 30px;
+    text-align: center;
+}
+
+.input-auto {
+    height: 40px;
+    width: 160px;
 }
 
 input {
@@ -51,9 +61,11 @@ hr {
 .input-field {
     width: 270px;
     height: 50px;
+    font-size: 40px;
+    text-align: center;
 }
 
-.keypad {
+.keypads {
     display: grid;
     height: 400px;
     align-content: center;
@@ -62,11 +74,25 @@ hr {
     padding: 10px;
 }
 
-.keypad>div {
-    background-color: rgba(255, 255, 255, 0.8);
+.keypads>div {
+    background-color: #ABA9DE;
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
 
-    border-radius: 2px;
+    border-radius: 5px;
+}
+
+/* button css */
+
+.x-btn {
+    background: #ee9115 !important;
+}
+
+.submit-btn {
+    background: rgb(60, 193, 69) !important;
+}
+
+.clear-btn {
+    background: #f15144 !important;
 }
