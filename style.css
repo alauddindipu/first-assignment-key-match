@@ -104,3 +104,9 @@ hr {
 .clear-btn {
     background: #f15144 !important;
 }
+
+.message {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}

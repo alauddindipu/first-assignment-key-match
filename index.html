@@ -57,10 +57,14 @@
             <button onclick="appendToShow('0')">
               0</button>
 
-            <button class="x-btn">X</button>
-            <button class="submit-btn">Submit</button>
+            <button onclick="removeChar(document.getElementById('show'))" class="x-btn">X</button>
+            <button onclick="chekValue()" class="submit-btn">Submit</button>
             <button onclick="clearShow()" class="clear-btn">Clear</button>
           </div>
+          <div id="messageId" class="message">
+            <p></p>
+          </div>
+
         </div>
       </div>
     </main>
