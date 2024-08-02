@@ -1,8 +1,16 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 main {
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    /* color: white; */
+
 }
 
 .container {
@@ -74,7 +82,7 @@ hr {
     padding: 10px;
 }
 
-.keypads>div {
+.keypads>button {
     background-color: #ABA9DE;
     text-align: center;
     padding: 20px 0;

@@ -11,3 +11,13 @@ let generatedVal= Math.floor(Math.random() * (maxm - minm + 1)) + minm;
 document.getElementById("input-auto-filed").value =generatedVal;
 
 });
+
+
+const showVal=document.getElementById("show");
+
+function appendToShow(input){
+    showVal.value +=input;
+}
+function clearShow(){
+    showVal.value="";
+}

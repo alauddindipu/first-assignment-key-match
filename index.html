@@ -23,22 +23,43 @@
 
         <div class="right-section">
           <p class="key-text">Enter PIN:
-            <input class="input-field" type="text" maxlength="6"></p>
+            <input id="show" class="input-field" type="value" maxlength="6"></p>
 
-          <div class="keypads">
-            <div class="">1</div>
-            <div class="">2</div>
-            <div class="">3</div>
-            <div class="">4</div>
-            <div class="">5</div>
-            <div class="">6</div>
-            <div class="">7</div>
-            <div class="">8</div>
-            <div class="">9</div>
-            <div class="">0</div>
-            <div class="x-btn">X</div>
-            <div class="submit-btn">Submit</div>
-            <div class="clear-btn">Clear</div>
+          <div id="keypad" class="keypads">
+
+            <button onclick="appendToShow('1')">
+              1</button>
+
+            <button onclick="appendToShow('2')">
+              2</button>
+
+            <button onclick="appendToShow('3')">
+              3</button>
+
+            <button onclick="appendToShow('4')">
+              4</button>
+
+            <button onclick="appendToShow('5')">
+              5</button>
+
+            <button onclick="appendToShow('6')">
+              6</button>
+
+            <button onclick="appendToShow('7')">
+              7</button>
+
+            <button onclick="appendToShow('8')">
+              8</button>
+
+            <button onclick="appendToShow('9')">
+              9</button>
+
+            <button onclick="appendToShow('0')">
+              0</button>
+
+            <button class="x-btn">X</button>
+            <button class="submit-btn">Submit</button>
+            <button onclick="clearShow()" class="clear-btn">Clear</button>
           </div>
         </div>
       </div>
