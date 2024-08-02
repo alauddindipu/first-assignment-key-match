@@ -1,0 +1,40 @@
+Assignment -1 : Secret Key Matcher
+bhaluka doict
+•
+Yesterday (Edited Yesterday)
+50 points
+Layout:
+   1. The interface will have two main responsive sections:
+     - Generate Password: A section where a six-digit random password is generated.
+     - Input & Match Section: A section for entering the password and matching it.
+
+   2. Keypad Layout:
+          - The default layout will have a 4-column grid for the keypad buttons.
+          - The layout should adapt responsively: 3 columns for medium-sized devices and 2 columns for smaller devices.
+   
+  3. Display Area:
+         - The entered number should be displayed in real-time. This area must also be responsive.
+ 4. The design does not need to be pixel-perfect compared to the provided reference image.
+ 5. The color scheme and size can be different from the reference, but they should remain pleasing and ensure readability.
+6. There will be some negative marking if the color combination is poor, such as if it is hard to read or visually unappealing
+
+
+Functional Requirements
+1. Password Generation:
+   - Each time the "Generate" button is pressed, a new six-digit number should be generated and displayed.
+2. Input Handling:
+   - When a number button is pressed, it should appear in the display area.
+   - The entered number cannot exceed six digits.
+3. Editing Input:
+   - A backspace ("X") button should allow the user to delete the last digit entered.
+   - A "Clear" button should clear the entire input.
+4. Submission and Validation:
+   - Upon pressing the "Submit" button, the entered number will be checked against the generated password.
+   - If they match, a success message with an icon will be displayed.
+   - If they don't match, an error message with an icon will be shown.
+5. Add atleast 5 commit to repository.
+
+Marking Scheme:
+The assignment is worth 50 points.
+The deadline is August 3rd, 11:59 PM. (2.5 days)
+Submissions after deadline will receive a maximum of 30 points (Submission after 10 August, this will be counted as invalid and marks will be 0).
