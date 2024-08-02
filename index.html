@@ -7,6 +7,9 @@
     <title>Key Match</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- font awesome not used, just saving this for future test-->
+    <!-- <script src="https://kit.fontawesome.com/b6ef3a7d72.js" crossorigin="anonymous"></script> -->
+
   </head>
 
   <body>
@@ -14,7 +17,7 @@
       <div class="container">
         <div class="left-section">
           <button id="random-generate" class="btn-generate key-text">Generate Secret Key</button>
-          <input id="input-auto-filed" class="input-auto" type="value" readonly="readonly">
+          <input id="input-auto-filed" placeholder="******" class="input-auto" type="value" readonly="readonly">
         </div>
 
         <div>
@@ -61,9 +64,7 @@
             <button onclick="chekValue()" class="submit-btn">Submit</button>
             <button onclick="clearShow()" class="clear-btn">Clear</button>
           </div>
-          <div id="messageId" class="message">
-            <p></p>
-          </div>
+          <p id="messageId" class="message"></p>
 
         </div>
       </div>
