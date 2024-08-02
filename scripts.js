@@ -6,7 +6,7 @@ randomId.addEventListener("click",function(){
     let minm = 100000;
     let maxm = 999999;
 let generatedVal= Math.floor(Math.random() * (maxm - minm + 1)) + minm;
-// console.log(generatedVal)
+
 
 document.getElementById("input-auto-filed").value =generatedVal;
 document.getElementById("messageId").innerHTML="";//clear message field
@@ -17,7 +17,11 @@ document.getElementById("messageId").innerHTML="";//clear message field
 const showVal=document.getElementById("show");
 
 function appendToShow(input){
-    showVal.value +=input;
+    if(showVal.value.length!=6){
+        showVal.value +=input;
+    }
+    else{
+    }
 }
 
 
@@ -39,7 +43,6 @@ function clearShow(){
 }
 
 //check auto generated value with typed
-
 function chekValue(){
     let autoValue= document.getElementById("input-auto-filed").value;
 
