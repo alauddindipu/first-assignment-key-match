@@ -2,8 +2,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100%; */
-    /* width: 100%; */
+    height: 100%;
+    width: 100%;
 }
 
 .container {
@@ -119,15 +119,15 @@ hr {
 
 
 /* ==========================For small Device========================== */
-@media only screen and (max-width:1200px) {
+/* @media only screen and (max-width:1200px) {
     .keypads {
 
         grid-template-columns: 100px 100px 100px 100px;
 
     }
-}
+} */
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:800px) {
 
     body {
         flex-direction: column;
