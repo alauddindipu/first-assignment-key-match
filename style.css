@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: auto;
 }
 
 .container {
@@ -115,8 +116,8 @@ hr {
 }
 
 
-/* ==========================For mobile phones:========================== */
-@media only screen and (max-width:770px) {
+/* ==========================For small Device========================== */
+@media only screen and (max-width:1200px) {
 
     body {
         flex-direction: column;
@@ -127,7 +128,7 @@ hr {
     }
 
     .left-section {
-        padding: 0px;
+        padding: 50px;
         /* flex-direction: row; */
     }
 
@@ -167,7 +168,7 @@ hr {
         align-content: center;
         grid-template-columns: 100px 100px 100px;
         gap: 5px;
-        padding: 0 10px;
+        padding: 0 40px;
         margin-top: 0px;
 
     }
@@ -202,4 +203,22 @@ hr {
         display: none;
     }
 
+}
+
+@media only screen and (max-width:430px) {
+    .keypads {
+        display: grid;
+        height: 400px;
+        align-content: center;
+        grid-template-columns: 100px 100px;
+        gap: 2px 20px;
+        padding: 0 60px;
+        margin-top: 0px;
+
+
+    }
+
+    .message {
+        font-size: 20px;
+    }
 }

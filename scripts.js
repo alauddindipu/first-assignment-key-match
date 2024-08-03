@@ -50,6 +50,6 @@ function chekValue(){
     }
     else
     {
-        document.getElementById("messageId").innerHTML="Warning: First Generate Secret Key";
+        document.getElementById("messageId").innerHTML="At first, Generate Secret Key.";
     }
 }
