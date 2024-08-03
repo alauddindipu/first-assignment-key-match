@@ -13,7 +13,6 @@ randomId.addEventListener("click",function(){
 
 
 const showVal=document.getElementById("show");
-
 function appendToShow(input){
     if(showVal.value.length!=6){
         showVal.value +=input;
@@ -51,6 +50,6 @@ function chekValue(){
     }
     else
     {
-        document.getElementById("messageId").innerHTML="Press Generate Secret Key";
+        document.getElementById("messageId").innerHTML="Warning: First Generate Secret Key";
     }
 }

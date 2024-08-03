@@ -13,62 +13,66 @@
   </head>
 
   <body>
-    <main>
-      <div class="container">
-        <div class="left-section">
-          <button id="random-generate" class="btn-generate key-text">Generate Secret Key</button>
-          <input id="input-auto-filed" placeholder="******" class="input-auto" type="value" readonly="readonly">
-        </div>
-
-        <div>
-          <hr>
-        </div>
-
-        <div class="right-section">
-          <p class="key-text">Enter PIN:
-            <input id="show" class="input-field" type="value" maxlength="6"></p>
-
-          <div id="keypad" class="keypads">
-
-            <button onclick="appendToShow('1')">
-              1</button>
-
-            <button onclick="appendToShow('2')">
-              2</button>
-
-            <button onclick="appendToShow('3')">
-              3</button>
-
-            <button onclick="appendToShow('4')">
-              4</button>
-
-            <button onclick="appendToShow('5')">
-              5</button>
-
-            <button onclick="appendToShow('6')">
-              6</button>
-
-            <button onclick="appendToShow('7')">
-              7</button>
-
-            <button onclick="appendToShow('8')">
-              8</button>
-
-            <button onclick="appendToShow('9')">
-              9</button>
-
-            <button onclick="appendToShow('0')">
-              0</button>
-
-            <button onclick="removeChar(document.getElementById('show'))" class="x-btn">X</button>
-            <button onclick="chekValue()" class="submit-btn">Submit</button>
-            <button onclick="clearShow()" class="clear-btn">Clear</button>
-          </div>
-          <p id="messageId" class="message"></p>
-
-        </div>
+    <div class="container">
+      <div class="left-section">
+        <button id="random-generate" class="btn-generate gen-key-text">Generate Secret Key</button>
+        <input id="input-auto-filed" class="input-auto" placeholder="******" type="value" readonly="readonly">
       </div>
-    </main>
+
+      <!-- drawing line -->
+      <div class="hr">
+        <hr>
+      </div>
+
+      <div class="right-section">
+        <div class="key-text">
+          <p>
+            <span>Enter PIN:</span>
+            <span>
+              <input id="show" class="input-field" type="value" maxlength="6">
+            </span>
+          </p>
+        </div>
+        <div id="keypad" class="keypads">
+
+          <button onclick="appendToShow('1')">
+            1</button>
+
+          <button onclick="appendToShow('2')">
+            2</button>
+
+          <button onclick="appendToShow('3')">
+            3</button>
+
+          <button onclick="appendToShow('4')">
+            4</button>
+
+          <button onclick="appendToShow('5')">
+            5</button>
+
+          <button onclick="appendToShow('6')">
+            6</button>
+
+          <button onclick="appendToShow('7')">
+            7</button>
+
+          <button onclick="appendToShow('8')">
+            8</button>
+
+          <button onclick="appendToShow('9')">
+            9</button>
+
+          <button onclick="appendToShow('0')">
+            0</button>
+
+          <button onclick="removeChar(document.getElementById('show'))" class="x-btn">X</button>
+          <button onclick="chekValue()" class="submit-btn">Submit</button>
+          <button onclick="clearShow()" class="clear-btn">Clear</button>
+        </div>
+        <p id="messageId" class="message"></p>
+
+      </div>
+    </div>
 
     <!-- js linked -->
     <script src="scripts.js"></script>
